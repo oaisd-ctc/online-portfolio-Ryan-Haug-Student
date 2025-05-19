@@ -70,6 +70,16 @@ section {
     border-radius: .4em;
 }
 
+hr {
+    width: 80%;
+
+    border-color: #CC9767;
+    border-style: solid;
+    
+    border-radius: 4px;
+    border-width: .1em;
+}
+
 img {
     background-color: #CC9767;
 
@@ -90,11 +100,12 @@ section > h3 {
     grid-template-columns: 2fr 1fr;
 }
 
-/* Cert and slideshow */
-
-#Cert {
-    width: 90%;
+/* experience */
+#Exp { 
+    margin-bottom: 0;
 }
+
+/* Cert and slideshow */
 
 #Cert > div {
     display: grid;
@@ -131,10 +142,6 @@ section > h3 {
 }
 
 /* Contact */
-
-#contact {
-    width: 115%;
-}
 
 /* Footer Content */
 
