@@ -100,6 +100,28 @@ section > h3 {
     grid-template-columns: 2fr 1fr;
 }
 
+/* about me */
+#AboutMe > div{
+    display: grid;
+    grid-template-columns: 1fr .5fr;
+
+    text-align: left;
+}
+
+#AboutMe > div > p {
+    margin-left: 2em;
+}
+
+#AboutMe > div > img {
+    width: 200px;
+    height: 200px;
+    justify-self: center;
+}
+
+#AboutMe > div > #AbtPhoto2 {
+    justify-self: right;
+}
+
 /* experience */
 #Exp { 
     margin-bottom: 0;
