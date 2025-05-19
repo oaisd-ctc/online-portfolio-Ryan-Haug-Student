@@ -23,11 +23,6 @@ body {
 header {
     background-color: #CC9767;
     
-    position: fixed;
-    top: 0;
-    right: 0;
-    left: 0;
-    
     display: grid;
     grid-template-columns: 1fr 2.5fr 1fr;
     
@@ -90,11 +85,15 @@ section > h3 {
     text-decoration: underline;
 }
 
+#bottomRow { 
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
 /* Cert and slideshow */
 
 #Cert {
-    width: 80%;
-    justify-self: center;
+    width: 90%;
 }
 
 #Cert > div {
@@ -129,6 +128,12 @@ section > h3 {
   font-size: 18px;
   transition: 0.6s ease;
   user-select: none;
+}
+
+/* Contact */
+
+#contact {
+    width: 115%;
 }
 
 /* Footer Content */
