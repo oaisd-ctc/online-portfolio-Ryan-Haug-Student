@@ -1,0 +1,147 @@
+/* Colors =>
+Main Bg: #F5F5DD;
+header Bg: #CC9767;
+
+main accent: #8B4411
+accent 2: #DEB887 //nav button bg
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+body {
+    background-image: url("../Images/portfolio-bg.png");
+    background-size: 80%;
+    margin: 0;
+
+    font-family: "Nunito", sans-serif;
+
+    color: #8B4411;
+}
+
+/* Header Content */
+
+header {
+    background-color: #CC9767;
+    
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    
+    align-items: center;
+    text-align: center;
+
+    border-style: solid;
+    border-width: 0 0 .2em 0;
+    border-color: #8B4411;
+}
+
+header > nav{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+nav > a {
+    background-color: #DEB887;
+    color:#8B4411;
+    font-size: 1.2em;
+    
+    padding: .4em;
+    margin: .2em;
+    
+    border-color: #8B4411;
+    border-style: solid;
+    border-width: .17em;
+    border-radius: .4em;
+}
+
+/* Body Content */
+
+main {
+    font-size: 1.4em;
+}
+
+section {
+    background-color: #deb88796;
+
+    margin: 1.4em;
+    text-align: center;
+
+    border-style: solid;
+    border-color: #8B4411;
+    border-radius: .4em;
+}
+
+img {
+    background-color: #CC9767;
+
+    padding: 1em;
+    margin: 1em;
+
+    border-style: solid;
+    border-color: #8B4411;
+    border-radius: .4em;
+}
+
+section > h3 {
+    text-decoration: underline;
+}
+
+/* Cert and slideshow */
+
+#Cert {
+    width: 80%;
+    justify-self: center;
+}
+
+#Cert > div {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+}
+
+.CertSlide {
+  display: none;
+  max-width: fit-content;
+
+  justify-self: center;
+}
+
+.CertSlide > a {
+    width: 0;
+    height: 0;
+}
+
+.CertSlide > a > img {
+    max-width: 240px;
+    max-height: 240px;
+
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.prev, .next {
+  cursor: pointer;
+  padding: 16px;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
+}
+
+/* Footer Content */
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer > section {
+    width: 75%;
+}
+
+footer > section > h4 {
+    margin-bottom: 0;
+    text-decoration: underline;
+}
+
+footer > section > p {
+    margin-top: 10px;
+}
