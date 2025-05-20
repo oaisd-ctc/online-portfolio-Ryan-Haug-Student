@@ -22,10 +22,10 @@ body {
 
 header {
     background-color: #CC9767;
-    
+
     display: grid;
     grid-template-columns: 1fr 2.5fr 1fr;
-    
+
     align-items: center;
     text-align: center;
 
@@ -34,26 +34,26 @@ header {
     border-color: #8B4411;
 }
 
-header > nav{
+header>nav {
     display: flex;
     flex-wrap: wrap;
 }
 
-nav > a {
+nav>a {
     background-color: #DEB887;
-    color:#8B4411;
+    color: #8B4411;
     font-size: 1.2em;
-    
+
     padding: .4em;
     margin: .2em;
-    
+
     border-color: #8B4411;
     border-style: solid;
     border-width: .17em;
     border-radius: .4em;
 }
 
-nav > a:hover {
+nav>a:hover {
     background-color: #a88b64;
 
     transition: .2s;
@@ -65,7 +65,8 @@ main {
     font-size: 1.4em;
 }
 
-section, #Attribute {
+section,
+#Attribute {
     background-color: #deb88796;
 
     margin: 1.4em;
@@ -81,7 +82,7 @@ hr {
 
     border-color: #CC9767;
     border-style: solid;
-    
+
     border-radius: 4px;
     border-width: .1em;
 }
@@ -106,6 +107,7 @@ button {
     border-style: solid;
     transform: translate(0, -2px);
 }
+
 button:hover {
     cursor: pointer;
     background-color: #b4956c;
@@ -113,63 +115,63 @@ button:hover {
     transition: .2s;
 }
 
-section > h3 {
+section>h3 {
     text-decoration: underline;
     margin-bottom: 0;
 }
 
-#bottomRow { 
+#bottomRow {
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
 
 /* about me */
-#AboutMe > div{
+#AboutMe>div {
     display: grid;
     grid-template-columns: 1fr .5fr;
 
     text-align: left;
 }
 
-#AboutMe > div > p {
+#AboutMe>div>p {
     margin-left: 2em;
 }
 
-#AboutMe > div > img {
+#AboutMe>div>img {
     width: 200px;
     height: 200px;
     justify-self: center;
 }
 
-#AboutMe > div > #AbtPhoto2 {
+#AboutMe>div>#AbtPhoto2 {
     justify-self: right;
 }
 
 /* experience */
-#Exp { 
+#Exp {
     margin-bottom: 0;
 }
 
 /* Cert and slideshow */
 
-#Cert > div {
+#Cert>div {
     display: grid;
     grid-template-columns: 2fr 1fr;
 }
 
 .CertSlide {
-  display: none;
-  max-width: fit-content;
+    display: none;
+    max-width: fit-content;
 
-  justify-self: center;
+    justify-self: center;
 }
 
-.CertSlide > a {
+.CertSlide>a {
     width: 0;
     height: 0;
 }
 
-.CertSlide > a > img {
+.CertSlide>a>img {
     max-width: 240px;
     max-height: 240px;
 
@@ -177,23 +179,24 @@ section > h3 {
     margin-bottom: 0;
 }
 
-.prev, .next {
-  cursor: pointer;
-  padding: 16px;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  user-select: none;
+.prev,
+.next {
+    cursor: pointer;
+    padding: 16px;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    user-select: none;
 }
 
 /* Contact */
 
-#Contact > h4 {
+#Contact>h4 {
     margin-bottom: 2px;
     text-decoration: underline;
 }
 
-#Contact > p {
+#Contact>p {
     margin-top: 2px;
 }
 
@@ -204,15 +207,15 @@ footer {
     justify-content: center;
 }
 
-footer > section {
+footer>section {
     width: 75%;
 }
 
-footer > section > h4 {
+footer>section>h4 {
     margin-bottom: 0;
     text-decoration: underline;
 }
 
-footer > section > p {
+footer>section>p {
     margin-top: 10px;
 }
