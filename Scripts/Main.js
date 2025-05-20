@@ -34,14 +34,9 @@ function showSlides(n) {
 }
 
 function showExperienceContent(n) {
-    let lang = document.getElementById("lang");
-    let proj = document.getElementById("proj");
+    const sections = ["lang", "proj", "work"];
 
-    lang.style.display = "none";
-    proj.style.display = "none";
-
-    if (n === 0) 
-        lang.style.display = "block";
-    else
-        proj.style.display = "block";
+    sections.forEach((id, index) => {
+        document.getElementById(id).style.display = index === n ? "block" : "none";
+    });
 }

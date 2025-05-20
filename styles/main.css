@@ -190,6 +190,7 @@ section > h3 {
 
 #Contact > h4 {
     margin-bottom: 2px;
+    text-decoration: underline;
 }
 
 #Contact > p {
