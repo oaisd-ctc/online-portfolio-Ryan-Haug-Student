@@ -24,15 +24,26 @@
         <section id="AboutMe">
             <h3>About Me</h3>
             <div>
-                <p>BlahBlahBlah</p>
-                <img src="Images\MeOnBike.jpg" alt="A photo of me posed on my motorcycle."><br>
-                <img src="Images\Sunset.jpg" alt="A photo of a sunset I took." id="AbtPhoto2">
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Placeat a dignissimos cumque laboriosam,
+                    quae velit, provident, maxime nobis optio sed error atque. Voluptate numquam aut, suscipit cum
+                    cumque animi pariatur!</p>
+                <img src="Images/MeOnBike.jpg" alt="A photo of me posed on my motorcycle."><br>
+                <img src="Images/Sunset.jpg" alt="A photo of a sunset I took." id="AbtPhoto2">
             </div>
         </section>
 
         <section id="Exp">
             <h3>Experience</h3>
-            <p>blah blah blah</p>
+            <button onclick="changeExpDisplay(0)">Languages</button>
+            <button onclick="changeExpDisplay(1)">Projects</button>
+
+            <div id="lang">
+                <p>Languages</p>
+            </div>
+            <div id="proj">
+                <p>Projects</p>
+            </div>
+
         </section>
 
         <div id="bottomRow">
@@ -125,7 +136,8 @@
                     Phone Number: 616-268-8131 <br>
                     Email: RyanHaug1024@gmail.com <br>
                 </p>
-                <a href="" target="_blank">My LinkedIn</a>
+                <a href=""><img src="Images/LinkedIn_logo.svg" alt="LinkedIn logo"
+                        style="height: 50px; width: 200px; margin: 5px 0 0 0;"></a>
 
                 <hr>
 
@@ -137,10 +149,10 @@
     </main>
 
     <footer>
-        <section>
-            <a href="https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/" target="_blank">Free
-                SVGBackgrounds and Patterns by SVGBackgrounds.com</a>
-        </section>
+        <div id="Attribute" style="width: 50%;">
+            <a href="https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/" target="_blank">
+                Free SVGBackgrounds and Patterns by SVGBackgrounds.com</a>
+        </div>
     </footer>
 
     <script src="./Scripts/Main.js" defer></script>
