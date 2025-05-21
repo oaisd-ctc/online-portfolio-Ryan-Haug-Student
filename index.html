@@ -11,154 +11,165 @@
 
 <body>
     <Header>
-        <h1>Ryan Haug's Portfolio</h1>
-        <h2>Home Page</h2>
         <nav>
-            <a href="#AboutMe">About Me</a>
-            <a href="#Exp">Experience</a>
-            <a href="#Cert">Certifications</a>
+            <a href="#About">About Me</a>
+            <a href="#Experience">Experience</a>
         </nav>
+        <h1>Ryan Haug</h1>
+        <nav>
+            <a href="#Certifications">Certifications</a>
+            <a href="#Contact">Contact Me</a>
+        </nav>
+
+        <div class="Line-Divider"></div>
     </Header>
 
     <main>
-        <section id="AboutMe">
-            <h3>About Me</h3>
-            <div>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore modi, minus tempora, nisi id sunt
-                    accusantium nulla beatae repudiandae cum assumenda quisquam quam cupiditate? Dolor culpa repellat
-                    cum esse nisi.</p>
-                <img src="Images/MeOnBike.jpg" alt="A photo of me posed on my motorcycle."><br>
-                <img src="Images/Sunset.jpg" alt="A photo of a sunset I took." id="AbtPhoto2">
-            </div>
-        </section>
+        <section id="Home">
+            <Div id="Home-Image">
+                <img src="" alt="photo of self">
+            </Div>
+            <Div id="Home-Content">
+                <h2>Software Engineer</h2>
 
-        <section id="Exp">
-            <h3>Experience</h3>
-            <button onclick="changeExpDisplay(0)">Languages</button>
-            <button onclick="changeExpDisplay(1)">Projects</button>
-            <button onclick="changeExpDisplay(2)">Work</button>
+                <div class="Line-Divider"></div>
 
-            <div id="lang">
-                <p>Languages</p>
-            </div>
-            <div id="proj">
-                <p>Projects</p>
-            </div>
-            <div id="work">
-                <p>Work</p>
-            </div>
-
-        </section>
-
-        <div id="bottomRow">
-            <section id="Cert">
-                <h3>Certifications</h3>
-
-                <div id="CertContent">
-                    <div class="CertSlideTxt">
-                        <p>CompTIA - Internet Technology Fundamentals<br>
-                            Issued: Feburary 04, 2025<br>
-                        </p>
-                    </div>
-                    <div class="CertSlideTxt">
-                        <p>Pearson IT Specialist - html and css<br>
-                            Issued: October 07, 2024<br>
-                        </p>
-                    </div>
-                    <div class="CertSlideTxt">
-                        <p>Unity Certified User: Programmer<br>
-                            Issued: November 14, 2024<br>
-                        </p>
-                    </div>
-                    <div class="CertSlideTxt">
-                        <p>Unity Certified User: VR Developer<br>
-                            Issued: May 2, 2025<br>
-                        </p>
-                    </div>
-                    <div class="CertSlideTxt">
-                        <p>Unity Certified User: Artist<br>
-                            Issued: May 2, 2025<br>
-                        </p>
-                    </div>
-
-                    <div id="CertSlideShow">
-                        <div class="CertSlide">
-                            <div class="numbertext">1 / 5</div>
-
-                            <a href="https://www.credly.com/badges/9e8abb3c-f15b-4b4c-9ac1-3bd36e9ef445/public_url"
-                                target="_blank">
-                                <img src="Images/CertificationPhotos/comptia-it-fundamentals-itf-certification.1.png"
-                                    alt="CompTIA itf certification badge.">
-                            </a>
-                        </div>
-                        <div class="CertSlide">
-                            <div class="numbertext">2 / 5</div>
-
-                            <a href="https://www.credly.com/badges/344489d9-c3b6-45bb-af23-d6f44ca11540/public_url"
-                                target="_blank">
-                                <img src="Images/CertificationPhotos/it-specialist-html-and-css.png"
-                                    alt="html and css certification badge.">
-                            </a>
-                        </div>
-                        <div class="CertSlide">
-                            <div class="numbertext">3 / 5</div>
-
-                            <a href="https://www.credly.com/badges/100dffa8-fb23-4634-9bc0-716e7ff6503c/public_url"
-                                target="_blank">
-                                <img src="Images/CertificationPhotos/unity-certified-user-programmer.png"
-                                    alt="Unity programmer certification badge.">
-                            </a>
-                        </div>
-                        <div class="CertSlide">
-                            <div class="numbertext">4 / 5</div>
-
-                            <a href="https://www.credly.com/badges/9712574c-4a21-4f0b-8372-786c6fdf6d1a/public_url"
-                                target="_blank">
-                                <img src="Images/CertificationPhotos/unity-certified-user-vr-developer.png"
-                                    alt="Unity VR developer certification badge.">
-                            </a>
-                        </div>
-                        <div class="CertSlide">
-                            <div class="numbertext">5 / 5</div>
-
-                            <a href="https://www.credly.com/badges/55442599-4394-40fd-98af-9286dadf8f62/public_url"
-                                target="_blank">
-                                <img src="Images/CertificationPhotos/unity-certified-user-artist.png"
-                                    alt="Unity artist certification badge.">
-                            </a>
-                        </div>
-
-                        <!-- Arrows -->
-                        <a class="prev" onclick="changeSlides(-1)">&#10094;</a>
-                        <a class="next" onclick="changeSlides(1)">&#10095;</a>
-                    </div>
-                </div>
-            </section>
-            <section id="Contact">
-                <h4>Contact Me</h4>
-                <p>
-                    Phone Number: 616-268-8131 <br>
-                    Email: RyanHaug1024@gmail.com <br>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis est quibusdam dolorum alias quos
+                    fugiat aliquam natus fugit qui perspiciatis animi libero harum, autem fuga non officia sapiente iste
+                    recusandae.
                 </p>
-                <a href=""><img src="Images/LinkedIn_logo.svg" alt="LinkedIn logo"
-                        style="height: 50px; width: 200px; margin: 5px 0 0 0;"></a>
+            </Div>
+            <div id="Home-Scroll">
+                <p>Please Scroll! (placeholder)</p>
+            </div>
+        </section>
 
-                <hr>
+        <div class="Line-Divider"></div>
 
-                <h4>My Resume</h4>
-                <a href="" target="_blank">Click Here to open in a new tab.</a> <br>
-                <a href="" download>Click here to download as PDF.</a>
-            </section>
-        </div>
+        <section id="About" class="Main-Content">
+            <h1>About Me</h1>
+
+            <div class="About-Photo">
+                <img src="" alt="Sunset Photo">
+            </div>
+            <div class="About-Text">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga delectus eligendi voluptatum. Natus ex
+                    asperiores aliquam maxime, fugit necessitatibus eius accusantium, assumenda architecto possimus
+                    eligendi ratione doloremque, quibusdam placeat molestias?
+                </p>
+            </div>
+            <div class="About-Text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ipsa iusto harum quod cum doloribus
+                    reiciendis veniam aspernatur nulla, ducimus esse, quibusdam sunt placeat explicabo veritatis,
+                    mollitia culpa sequi minima.
+                </p>
+            </div>
+            <div class="About-Photo">
+                <img src="" alt="Photo of me on bike">
+            </div>
+        </section>
+
+        <section id="Experience" class="Main-Content">
+            <h1>My Experience</h1>
+
+            <h3>Languages</h3>
+            <div id="Language-Photos">
+                <div>
+                    <img src="" alt="HTML5 logo">
+                </div>
+                <div>
+                    <img src="" alt="CSS3 logo">
+                </div>
+                <div>
+                    <img src="" alt="C# logo">
+                </div>
+                <div>
+                    <img src="" alt="JS logo">
+                </div>
+                <div>
+                    <img src="" alt="Kotlin logo">
+                </div>
+            </div>
+
+            <h3>Tools</h3>
+            <div id="Experience-Tools">
+                <div>
+                    <img src="" alt="Visual Studio logo">
+                </div>
+                <div>
+                    <img src="" alt="Andriod Studio logo">
+                </div>
+                <div>
+                    <img src="" alt="Unity logo">
+                </div>
+                <div>
+                    <img src="" alt="Github logo">
+                </div>
+                <div>
+                    <img src="" alt="Azure logo">
+                </div>
+            </div>
+
+        </section>
+
+        <section id="Certifications" class="Main-Content">
+            <h1>Certifications</h1>
+
+            <div id="Certification-Selector">
+                <ul>
+                    <li>CompTIA ITF</li>
+                    <li>Pearson HTML and CSS</li>
+                    <li>Unity Certified Programmer</li>
+                    <li>Unity Certified VR Developer</li>
+                    <li>Unity Certified Artist</li>
+                </ul>
+            </div>
+            <div id="Certs">
+                <div id="itf-Cert">
+
+                </div>
+                <div id="html-css-Cert">
+
+                </div>
+                <div id="Unity-prog-Cert">
+
+                </div>
+                <div id="Unity-vr-dev-Cert">
+
+                </div>
+                <div id="unity-Artist-Cert">
+
+                </div>
+            </div>
+        </section>
+
+        <div class="Line-Divider"></div>
+
+        <section id="Contact" class="Main-Content">
+            <h1>Contact Me!</h1>
+
+            <form action="https://formsubmit.co/ryanhaug1024@gmail.com" method="POST">
+                <p>Name *</p>
+                <input type="text" name="name" placeholder="John Smith" required>
+
+                <p>Phone Number</p>
+                <input type="number" name="PhoneNumber" placeholder="123-456-7890">
+
+                <p>Email *</p>
+                <input type="email" name="email" placeholder="Example@gmail.com" required>
+
+                <p>Message *</p>
+                <input type="text" name="Message" placeholder="Message" required>
+
+                <br>
+
+                <input type="submit">
+                <p id="smallText">(* indicates required)</p>
+            </form>
+        </section>
     </main>
-
-    <footer>
-        <div id="Attribute" style="width: 50%;">
-            <a href="https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/" target="_blank">
-                Free SVGBackgrounds and Patterns by SVGBackgrounds.com</a>
-        </div>
-    </footer>
 
     <script src="./Scripts/Main.js" defer></script>
 </body>
+
 </html>
