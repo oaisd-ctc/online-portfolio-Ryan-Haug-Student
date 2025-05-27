@@ -49,6 +49,12 @@ h1 {
     margin-bottom: 1em;
 }
 
+img {
+    background-color: var(--color-primary-dark);
+    min-height: 100px;
+    min-width: 100px;
+}
+
 /* header */
 
 header {
