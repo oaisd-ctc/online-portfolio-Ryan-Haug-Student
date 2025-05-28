@@ -41,7 +41,7 @@ a {
     
     /* set default pos if anim cannot play */
     background-position: 0% 0%,40% 40%, 80% 70%;
-    background-size: 150% 150%;
+    background-size: 175%;
     background-repeat: no-repeat;
 
     animation: moveBG 15s ease-in-out infinite alternate;
