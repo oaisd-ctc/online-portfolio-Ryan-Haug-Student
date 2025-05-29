@@ -3,6 +3,7 @@
 :root {
     /* Background Colors */
     --Color-BG-Main: #0d1117;
+    --Color-BG-Main-Transparent: #0d1117a2;
     --Color-BG-Secondary: #1B998B;
     --Color-BG-Tertiary: #8367C7;
     --Color-BG-Quaternary: #A5CCD1;
@@ -12,6 +13,8 @@
     --Color-Text-Muted: #cedcdd;
 }
 
+/* Whole document css */
+
 body {
     margin: 0;
     overflow-x: hidden;
@@ -19,11 +22,31 @@ body {
     background-color: var(--Color-BG-Main);
 
     color: var(--Color-Text-Main);
-    font-family: "Nunito" sans-serif;
+    font-family: "Nunito", sans-serif;
+}
+
+main {
+    font-size: 1.2em;
+}
+
+section {
+    width: 80%;
+    justify-self: center;
+
+    padding-top: 6em;
+}
+
+img {
+    min-width: 100px;
+    min-height: 100px;
 }
 
 a {
     color: var(--Color-Text-Muted);
+}
+
+.Small_Text {
+    font-size: .8em;
 }
 
 /* Background */
@@ -32,17 +55,17 @@ a {
     position: fixed;
     z-index: -1;
     width: 100%;
-    height: 100%;
+    height: 100vh;
 
-    background-image: 
-        radial-gradient(circle, var(--Color-BG-Secondary) 0%, transparent 60%), 
+    background-image:
+        radial-gradient(circle, var(--Color-BG-Secondary) 0%, transparent 60%),
         radial-gradient(circle, var(--Color-BG-Tertiary) 0%, transparent 60%),
         radial-gradient(circle, var(--Color-BG-Quaternary) 0%, transparent 60%);
-    
+
     /* set default pos if anim cannot play */
-    background-position: 0% 0%,40% 40%, 80% 70%;
+    background-position: 0% 0%, 40% 40%, 80% 70%;
     background-size: 175%;
-    background-repeat: no-repeat;
+    /* background-repeat: no-repeat; */
 
     animation: moveBG 15s ease-in-out infinite alternate;
 }
@@ -64,19 +87,22 @@ a {
 /* Header */
 
 header {
-    position: sticky;
+    position: fixed;
+    width: 100%;
 
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
 
     align-items: center;
     justify-items: center;
+
+    backdrop-filter: blur(15px);
 }
 
 header::after {
     content: "";
     position: sticky;
-    
+
     grid-column: span 3;
     width: 80%;
     height: 2px;
@@ -87,10 +113,75 @@ header::after {
 nav:first-of-type {
     justify-self: right;
 }
+
 nav:last-of-type {
     justify-self: left;
 }
 
-nav > a {
+nav>a {
     margin: 0 1em;
+}
+
+/* Home Content */
+
+#Home {
+    height: 85vh;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 2fr .1fr;
+
+    align-items: center;
+}
+
+#Home>img {
+    justify-self: center;
+}
+
+#Home>* {
+    background: rgba(255, 255, 255, 0.08);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+
+    border-radius: 8px;
+
+    padding: 2em;
+    margin-bottom: 2em;
+}
+
+#Home>article>p {
+    margin-top: 0;
+}
+
+#Home>article>h2 {
+    margin-bottom: 0;
+}
+
+#Home>article>h2::after {
+    content: "";
+    position: sticky;
+    display: block;
+
+    width: 80%;
+    height: 2px;
+    margin: 0.5em 0;
+
+    background: linear-gradient(to right, var(--Color-Text-Muted), transparent);
+}
+
+#Home>aside {
+    width: 7em;
+    height: 1.8em;
+
+    margin: 0;
+    padding: 0.1em;
+
+    grid-column: span 2;
+    justify-self: center;
+    align-content: center;
+}
+
+#Home>aside>p {
+    margin: 0;
+    text-align: center;
 }
