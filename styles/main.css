@@ -7,6 +7,7 @@
     --Color-BG-Secondary: #1B998B;
     --Color-BG-Tertiary: #8367C7;
     --Color-BG-Quaternary: #A5CCD1;
+    --Color-Card-Background: #FFFFFF20;
 
     /* Text */
     --Color-Text-Main: #E6FAFC;
@@ -34,6 +35,17 @@ section {
     justify-self: center;
 
     padding-top: 6em;
+}
+
+section > * { /*Content card, the little blur effect*/
+    background: var(--Color-Card-Background);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+
+    border-radius: 8px;
+
+    padding: 2em;
+    margin-bottom: 2em;
 }
 
 img {
@@ -128,7 +140,7 @@ nav>a {
     height: 85vh;
 
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1.2fr 1fr;
     grid-template-rows: 2fr .1fr;
 
     align-items: center;
@@ -136,17 +148,6 @@ nav>a {
 
 #Home>img {
     justify-self: center;
-}
-
-#Home>* {
-    background: rgba(255, 255, 255, 0.08);
-    backdrop-filter: blur(20px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
-
-    border-radius: 8px;
-
-    padding: 2em;
-    margin-bottom: 2em;
 }
 
 #Home>article>p {
@@ -179,9 +180,25 @@ nav>a {
     grid-column: span 2;
     justify-self: center;
     align-content: center;
+
+    animation: Bob_Content 2s ease-in infinite alternate;
 }
 
 #Home>aside>p {
     margin: 0;
     text-align: center;
+}
+
+@keyframes Bob_Content {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    40% {
+        transform: translate(0, -3px);
+    }
+
+    100% {
+        transform: translate(0, -3px);
+    }
 }
