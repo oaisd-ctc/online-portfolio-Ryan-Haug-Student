@@ -31,7 +31,7 @@ main {
 }
 
 section {
-    width: 80%;
+    width: 90%;
     justify-self: center;
 
     padding-top: 6em;
@@ -46,6 +46,24 @@ section > * { /*Content card, the little blur effect*/
 
     padding: 2em;
     margin-bottom: 2em;
+
+    transition: .2s;
+}
+
+section > *:hover:not(h2) {
+    transform: translate(0, -5px);
+    transition: .2s;
+}
+
+h2 {
+    text-align: center;
+    justify-self: center;
+
+    margin-bottom: 1em;
+    padding: 0 1em;
+
+    height: fit-content;
+    width: fit-content;
 }
 
 img {
@@ -158,6 +176,10 @@ nav>a {
 
 #Home>article>h2 {
     margin-bottom: 0;
+    padding: 0;
+
+    text-align: left;
+    justify-self: left;
 }
 
 #Home>article>h2::after {
@@ -203,4 +225,60 @@ nav>a {
     100% {
         transform: translate(0, -3px);
     }
+}
+
+/* About Me */
+
+.Abt_Content{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.Abt_Content > img {
+    padding: 0 2em;
+}
+
+/* Experience */
+
+#Experience {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: .2fr 1fr 3fr;
+}
+
+#Experience > div {
+    margin: 1em;
+}
+
+#Experience > h2 {
+    grid-column: span 2;
+}
+
+#Experience > div > h3 {
+    text-align: center;
+    margin: 0;
+}
+
+#Experience > #languages {
+    grid-row: span 2;
+}
+
+/* Certifications */
+
+#Certifications {
+    display: flex;
+    flex-wrap: wrap;
+
+    justify-content: center;
+}
+
+#Certifications > h2 {
+    margin: 1em 40% 1em 40%;
+    width: fit-content;
+}
+
+#Certifications > div {
+    width: 25%;
+    margin: .5em;
 }
