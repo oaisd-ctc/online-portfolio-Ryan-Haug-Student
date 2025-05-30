@@ -11,7 +11,7 @@
 
     /* Text */
     --Color-Text-Main: #E6FAFC;
-    --Color-Text-Muted: #cedcdd;
+    --Color-Text-Muted: #c5d0d1;
 }
 
 /* Whole document css */
@@ -37,7 +37,8 @@ section {
     padding-top: 6em;
 }
 
-section > * { /*Content card, the little blur effect*/
+section>*:not(h2) {
+    /*Content card, the little blur effect*/
     background: var(--Color-Card-Background);
     backdrop-filter: blur(10px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
@@ -50,7 +51,7 @@ section > * { /*Content card, the little blur effect*/
     transition: .2s;
 }
 
-section > *:hover:not(h2) {
+section>*:hover:not(h2):not(.Contact_Card) {
     transform: translate(0, -5px);
     transition: .2s;
 }
@@ -66,9 +67,25 @@ h2 {
     width: fit-content;
 }
 
+h2::after {
+    content: "";
+    position: sticky;
+    display: block;
+    justify-self: center;
+
+    grid-column: span 2;
+    width: 250%;
+    height: 2px;
+
+    background: linear-gradient(to right, transparent, var(--Color-Text-Muted), transparent);
+}
+
 img {
-    min-width: 100px;
-    min-height: 100px;
+    max-width: 300px;
+    max-height: 300px;
+
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px 5px var(--Color-BG-Main-Transparent);
 }
 
 a {
@@ -97,7 +114,7 @@ a {
     background-size: 175%;
     /* background-repeat: no-repeat; */
 
-    animation: moveBG 15s ease-in-out infinite alternate;
+    animation: moveBG 10s ease-in-out infinite alternate;
 }
 
 @keyframes moveBG {
@@ -183,12 +200,7 @@ nav>a {
 }
 
 #Home>article>h2::after {
-    content: "";
-    position: sticky;
-    display: block;
-
-    width: 80%;
-    height: 2px;
+    width: 100%;
     margin: 0.5em 0;
 
     background: linear-gradient(to right, var(--Color-Text-Muted), transparent);
@@ -229,14 +241,15 @@ nav>a {
 
 /* About Me */
 
-.Abt_Content{
+.Abt_Content {
     display: flex;
     justify-content: space-around;
 }
 
 
-.Abt_Content > img {
+.Abt_Content>article {
     padding: 0 2em;
+    align-self: center;
 }
 
 /* Experience */
@@ -247,20 +260,20 @@ nav>a {
     grid-template-rows: .2fr 1fr 3fr;
 }
 
-#Experience > div {
+#Experience>div {
     margin: 1em;
 }
 
-#Experience > h2 {
+#Experience>h2 {
     grid-column: span 2;
 }
 
-#Experience > div > h3 {
+#Experience>div>h3 {
     text-align: center;
     margin: 0;
 }
 
-#Experience > #languages {
+#Experience>#languages {
     grid-row: span 2;
 }
 
@@ -273,12 +286,107 @@ nav>a {
     justify-content: center;
 }
 
-#Certifications > h2 {
+#Certifications>h2 {
     margin: 1em 40% 1em 40%;
     width: fit-content;
 }
 
-#Certifications > div {
+#Certifications>div {
     width: 25%;
     margin: .5em;
+}
+
+.Cert_Card {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+}
+
+.Cert_Card>h4 {
+    width: 100%;
+    grid-column: span 2;
+}
+
+.Cert_Card>img {
+    max-height: 200px;
+    max-width: 200px;
+}
+
+/* Contact */
+
+#Contact {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2em;
+
+    text-align: center;
+}
+
+#Contact>h2 {
+    margin: 0 40% 0 40%;
+}
+
+#Contact>.Contact_Card {
+    width: 40%;
+}
+
+#Contact>.Contact_Card>h3 {
+    margin-top: 0;
+}
+
+
+#ContactForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#ContactForm>input,
+#ContactForm>textarea {
+    background: #ffffff10;
+    color: var(--Color-Text-Main);
+    border: none;
+    border-radius: 8px;
+    padding: 0.75em 1em;
+    font-size: 1em;
+
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+#ContactForm>input:focus,
+#ContactForm>textarea:focus {
+    outline: none;
+    background: #ffffff20;
+    box-shadow: 0 0 0 2px var(--Color-BG-Tertiary);
+}
+
+#ContactForm>input[type="submit"] {
+    background: var(--Color-BG-Tertiary);
+    color: #fff;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+#ContactForm>input[type="submit"]:hover {
+    background: var(--Color-BG-Secondary);
+}
+
+#ContactForm>input::placeholder,
+#ContactForm>textarea::placeholder {
+    color: var(--Color-Text-Muted);
+}
+
+
+#Contact>#Other-contact {
+    width: fit-content;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+#Contact>#Other-contact>a>img {
+    max-height: 125px;
+    
 }
