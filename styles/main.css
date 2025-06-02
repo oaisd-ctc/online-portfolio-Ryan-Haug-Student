@@ -141,7 +141,7 @@ a {
     background: radial-gradient(var(--Color-Text-Muted) 20%, transparent);
     border-radius: 50%;
     opacity: 0.5;
-    animation: 15s riseUp linear infinite;
+    animation: 30s riseUp linear infinite;
 }
 
 @keyframes riseUp {
@@ -155,7 +155,7 @@ a {
     }
 
     100% {
-        transform: translateY(-500vh);
+        transform: translateY(-400vh);
         opacity: 0;
     }
 }
