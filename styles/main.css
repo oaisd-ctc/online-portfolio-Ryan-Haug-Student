@@ -128,15 +128,18 @@ a {
 
 @keyframes moveBG {
     0% {
-        background-position: 0% 0%, 80% 70%, 40% 40%;
+        background-position: 0% 0%, 50% 50%, 100% 100%;
+        background-size: 180% 180%;
     }
 
     50% {
-        background-position: 100% 20%, 20% 60%, 60%, 60%;
+        background-position: 80% 10%, 10% 90%, 90% 20%;
+        background-size: 220% 220%;
     }
 
     100% {
-        background-position: 100% 80%, 20% 20%, 40% 40%;
+        background-position: 20% 80%, 100% 10%, 30% 90%;
+        background-size: 180% 180%;
     }
 }
 
@@ -157,7 +160,7 @@ a {
     background: radial-gradient(var(--Color-Text-Muted) 20%, transparent);
     border-radius: 50%;
     opacity: 0.5;
-    animation: 30s riseUp linear infinite;
+    animation: 100s riseUp linear infinite;
 }
 
 @keyframes riseUp {
@@ -171,7 +174,7 @@ a {
     }
 
     100% {
-        transform: translateY(-400vh);
+        transform: translateY(-500vh);
         opacity: 0;
     }
 }
@@ -286,7 +289,7 @@ nav>a {
 
 /* About Me */
 
-.Abt_Content  {
+.Abt_Content {
     display: flex;
     justify-content: space-around;
 }
@@ -433,5 +436,5 @@ nav>a {
 
 #Contact>#Other-contact>a>img {
     max-height: 125px;
-    
+
 }
