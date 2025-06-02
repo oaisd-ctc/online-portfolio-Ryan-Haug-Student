@@ -37,7 +37,8 @@ section {
     padding-top: 6em;
 }
 
-section > * { /*Content card, the little blur effect*/
+section>* {
+    /*Content card, the little blur effect*/
     background: var(--Color-Card-Background);
     backdrop-filter: blur(10px);
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
@@ -50,7 +51,7 @@ section > * { /*Content card, the little blur effect*/
     transition: .2s;
 }
 
-section > *:hover:not(h2) {
+section>*:hover:not(h2) {
     transform: translate(0, -5px);
     transition: .2s;
 }
@@ -77,6 +78,15 @@ a {
 
 .Small_Text {
     font-size: .8em;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--Color-BG-Quaternary);
+    border-radius: 4px;
 }
 
 /* Background */
@@ -111,6 +121,42 @@ a {
 
     100% {
         background-position: 100% 80%, 20% 20%, 40% 40%;
+    }
+}
+
+/* BG particles */
+
+#particle-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+}
+
+.js-particle {
+    position: absolute;
+    bottom: -10px;
+    background: radial-gradient(var(--Color-Text-Muted) 20%, transparent);
+    border-radius: 50%;
+    opacity: 0.5;
+    animation: 15s riseUp linear infinite;
+}
+
+@keyframes riseUp {
+    0% {
+        transform: translateY(0);
+        opacity: 0.5;
+    }
+
+    80% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-500vh);
+        opacity: 0;
     }
 }
 
@@ -229,13 +275,13 @@ nav>a {
 
 /* About Me */
 
-.Abt_Content{
+.Abt_Content {
     display: flex;
     justify-content: space-around;
 }
 
 
-.Abt_Content > img {
+.Abt_Content>img {
     padding: 0 2em;
 }
 
@@ -247,20 +293,20 @@ nav>a {
     grid-template-rows: .2fr 1fr 3fr;
 }
 
-#Experience > div {
+#Experience>div {
     margin: 1em;
 }
 
-#Experience > h2 {
+#Experience>h2 {
     grid-column: span 2;
 }
 
-#Experience > div > h3 {
+#Experience>div>h3 {
     text-align: center;
     margin: 0;
 }
 
-#Experience > #languages {
+#Experience>#languages {
     grid-row: span 2;
 }
 
@@ -273,12 +319,12 @@ nav>a {
     justify-content: center;
 }
 
-#Certifications > h2 {
+#Certifications>h2 {
     margin: 1em 40% 1em 40%;
     width: fit-content;
 }
 
-#Certifications > div {
+#Certifications>div {
     width: 25%;
     margin: .5em;
 }
