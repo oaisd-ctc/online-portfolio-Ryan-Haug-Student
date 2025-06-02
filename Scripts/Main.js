@@ -1,8 +1,10 @@
 const particleCont = document.getElementById("ParticleContainer");
 const pageHeight = document.body.scrollHeight;
 
+const plsScroll = document.getElementById("uselessThingy");
+
 document.addEventListener("DOMContentLoaded", () => {
-    for (let i = 0; i < 50; i++) {
+    for (let i = 0; i < 100; i++) {
         const particle = document.createElement("div");
         particle.className = "js-particle";
         particle.style.left = Math.random() * 100 + "vw";
@@ -15,3 +17,4 @@ document.addEventListener("DOMContentLoaded", () => {
         particleCont.appendChild(particle);
     }
 }); 
+    
