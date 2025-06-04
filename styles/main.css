@@ -37,7 +37,7 @@ section {
     padding-top: 6em;
 }
 
-section>*:not(h2) {
+section>*:not(h2):not(.ignoreBG) {
     /*Content card, the little blur effect*/
     background: var(--Color-Card-Background);
     backdrop-filter: blur(10px);
@@ -290,6 +290,8 @@ nav>a {
 .Abt_Content {
     display: flex;
     justify-content: space-around;
+
+    font-size: 1.3em;
 }
 
 
@@ -328,9 +330,15 @@ nav>a {
     grid-row: span 2;
 
     display: grid;
-    grid-template-rows: .2fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: .2fr 1fr 1fr 1fr;
 
     align-items: center;
+    justify-content: center;
+}
+
+#Experience>#languages>div>img {
+    max-width: 200px;
+    max-height: 200px;
 }
 
 #Experience > #tools {
@@ -341,10 +349,33 @@ nav>a {
     text-align: center;
 }
 
+.Project_Card {
+    display: none;
+    justify-items: center;
+
+    grid-template-columns: 2fr 1fr;
+}
+
 #Experience > #tools > h3 {
     grid-column: span 4;
 }
 
+#Arrows {
+    display: flex;
+    text-align: center;
+    justify-self: center;
+}
+
+#Arrows > p {
+    margin: 0 10px;
+    scale: 1.2;
+
+    user-select: none;
+}
+
+#Arrows > p:hover {
+    cursor: pointer;
+}
 /* Certifications */
 
 #Certifications {
