@@ -47,3 +47,23 @@ function SwapProject(i) {
     DisplayProject();
 }
 
+
+// loading screen
+window.addEventListener("load", () => {
+    const overlay = document.getElementById("LoadingOverlay");
+    const letters = document.querySelectorAll("#LoadingName span");
+    const totalDuration = 4500; // 5 seconds
+    const perLetter = totalDuration / letters.length;
+
+    letters.forEach((span, i) => {
+        setTimeout(() => {
+            span.classList.add("fly");
+        }, i * perLetter);
+    });
+    
+    setTimeout(() => {
+        overlay.classList.add("hide");
+        setTimeout(() => overlay.remove(), 700);
+    }, totalDuration + 700);
+});
+

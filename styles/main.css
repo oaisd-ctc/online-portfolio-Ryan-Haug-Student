@@ -490,3 +490,45 @@ nav>a {
     max-height: 125px;
 
 }
+
+/* Loading Overlay */
+
+#LoadingOverlay {
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: var(--Color-BG-Main);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.7s;
+}
+
+#LoadingName {
+    display: flex;
+    gap: 0.2em;
+    font-size: 3em;
+    font-weight: bold;
+    color: var(--Color-Text-Main);
+    letter-spacing: 0.1em;
+}
+
+#LoadingName span {
+    display: inline-block;
+    opacity: 1;
+    transform: translateY(0);
+    transition: transform 0.7s cubic-bezier(.68,-0.55,.27,1.55), opacity 0.7s;
+}
+
+#LoadingName span.fly {
+    opacity: 0;
+    transform: translateY(-120px) rotate(-30deg) scale(1.2);
+}
+
+#LoadingOverlay.hide {
+    opacity: 0;
+    pointer-events: none;
+}
