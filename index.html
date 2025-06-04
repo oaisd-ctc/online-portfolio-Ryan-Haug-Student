@@ -1,18 +1,27 @@
 <!DOCTYPE html>
-<html lang="En">
+<html lang="en">
 
 <head>
-    <title>Ryan's Portfolio</title>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ryan's Portfolio</title>
+
     <link rel="stylesheet" href="styles/main.css">
 </head>
 
 <body>
-    <Header>
+    <div id="LoadingOverlay">
+        <div id="LoadingName">
+            <span>R</span><span>y</span><span>a</span><span>n</span>
+            <span>H</span><span>a</span><span>u</span><span>g</span><span> - loading</span><span>.</span><span>.</span><span>.</span>
+        </div>
+    </div>
+    <div id="Background"></div>
+    <div id="ParticleContainer"></div>
+
+    <header>
         <nav>
-            <a href="#About">About Me</a>
+            <a href="#AboutMe">About Me</a>
             <a href="#Experience">Experience</a>
         </nav>
         <h1>Ryan Haug</h1>
@@ -20,156 +29,236 @@
             <a href="#Certifications">Certifications</a>
             <a href="#Contact">Contact Me</a>
         </nav>
-
-        <div class="Line-Divider"></div>
-    </Header>
+    </header>
 
     <main>
         <section id="Home">
-            <Div id="Home-Image">
-                <img src="" alt="photo of self">
-            </Div>
-            <Div id="Home-Content">
+            <img src="Images/Ryan-Haug-Portrait.jpg" alt="A photo of Ryan Haug" style="scale: 1.4;">
+
+            <article id="Home-Text">
                 <h2>Software Engineer</h2>
-
-                <div class="Line-Divider"></div>
-
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis est quibusdam dolorum alias quos
-                    fugiat aliquam natus fugit qui perspiciatis animi libero harum, autem fuga non officia sapiente iste
-                    recusandae.
+                <p> Hey, I love being a creative and detail oriented developer with a passion for building clean,
+                    responsive websites aswell as bringing ideas to life through code. Whether its designing clean UI or
+                    solving complex technical problems, I strive to create digital Experiences that are both functional
+                    and visually engaging. <br>
+                    Thank you for checking out my portfolio!
                 </p>
-            </Div>
-            <div id="Home-Scroll">
-                <p>Please Scroll! (placeholder)</p>
-            </div>
+            </article>
+
+            <aside class="Small_Text">
+                <p>Please Scroll!</p>
+            </aside>
         </section>
 
-        <div class="Line-Divider"></div>
 
-        <section id="About" class="Main-Content">
-            <h1>About Me</h1>
-
-            <div class="About-Photo">
-                <img src="" alt="Sunset Photo">
-            </div>
-            <div class="About-Text">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fuga delectus eligendi voluptatum. Natus ex
-                    asperiores aliquam maxime, fugit necessitatibus eius accusantium, assumenda architecto possimus
-                    eligendi ratione doloremque, quibusdam placeat molestias?
-                </p>
-            </div>
-            <div class="About-Text">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum ipsa iusto harum quod cum doloribus
-                    reiciendis veniam aspernatur nulla, ducimus esse, quibusdam sunt placeat explicabo veritatis,
-                    mollitia culpa sequi minima.
-                </p>
-            </div>
-            <div class="About-Photo">
-                <img src="" alt="Photo of me on bike">
-            </div>
-        </section>
-
-        <section id="Experience" class="Main-Content">
-            <h1>My Experience</h1>
-
-            <h3>Languages</h3>
-            <div id="Language-Photos">
-                <div>
-                    <img src="" alt="HTML5 logo">
+        <section id="AboutMe">
+            <h2>About Me</h2>
+            <div>
+                <div class="Abt_Content">
+                    <img src="Images/MeOnBike.jpg" alt="placeholder">
+                    <article>
+                        <p> My journey:<br>
+                            Ever since I was a kid, the idea of creating through technology has always piqued my
+                            curiosity. Whether it was building machines with Minecraft Redstone or experimenting in
+                            Scratch, I loved finding logical solutions through play. That passion led me to build my
+                            first computer at 13, though I only dabbled in programming until high school. Things really
+                            took off in my junior year when I joined the OAISD Careerline Tech Center for software and
+                            game development. There, I began with basic HTML and CSS, quickly finishing labs and earning
+                            certifications. We progressed to C# console applications in .NET, and finally to Unity for
+                            game development; where the combination of physics, logic, and creativity hooked me. I’m
+                            returning for my senior year to dive deeper into JavaScript, SQL, and more advanced
+                            concepts.</p>
+                    </article>
                 </div>
-                <div>
-                    <img src="" alt="CSS3 logo">
-                </div>
-                <div>
-                    <img src="" alt="C# logo">
-                </div>
-                <div>
-                    <img src="" alt="JS logo">
-                </div>
-                <div>
-                    <img src="" alt="Kotlin logo">
-                </div>
-            </div>
-
-            <h3>Tools</h3>
-            <div id="Experience-Tools">
-                <div>
-                    <img src="" alt="Visual Studio logo">
-                </div>
-                <div>
-                    <img src="" alt="Andriod Studio logo">
-                </div>
-                <div>
-                    <img src="" alt="Unity logo">
-                </div>
-                <div>
-                    <img src="" alt="Github logo">
-                </div>
-                <div>
-                    <img src="" alt="Azure logo">
-                </div>
-            </div>
-
-        </section>
-
-        <section id="Certifications" class="Main-Content">
-            <h1>Certifications</h1>
-
-            <div id="Certification-Selector">
-                <ul>
-                    <li>CompTIA ITF</li>
-                    <li>Pearson HTML and CSS</li>
-                    <li>Unity Certified Programmer</li>
-                    <li>Unity Certified VR Developer</li>
-                    <li>Unity Certified Artist</li>
-                </ul>
-            </div>
-            <div id="Certs">
-                <div id="itf-Cert">
-
-                </div>
-                <div id="html-css-Cert">
-
-                </div>
-                <div id="Unity-prog-Cert">
-
-                </div>
-                <div id="Unity-vr-dev-Cert">
-
-                </div>
-                <div id="unity-Artist-Cert">
-
+                <div class="Abt_Content">
+                    <article>
+                        <p> My Personal Life: <br>
+                            Outside of programming and school, I’m someone who loves staying active and creative in
+                            other ways too. I ride a motorcycle because I love the feeling of freedom and the open road.
+                            I’m also into photography, I don’t have a professional setup, but I enjoy capturing moments
+                            when I can. When I’m not out and about, I like spending time with friends, either at the
+                            beach or gaming together. Some of my favorite games are Valorant, Assetto Corsa, Risk of
+                            Rain 2, and of course, Minecraft one of the games that helped spark this whole journey in
+                            the
+                            first place.
+                        </p>
+                    </article>
+                    <img src="Images/Sunset.jpg" alt="placeholder">
                 </div>
             </div>
         </section>
 
-        <div class="Line-Divider"></div>
 
-        <section id="Contact" class="Main-Content">
-            <h1>Contact Me!</h1>
+        <section id="Experience">
+            <h2>My Experience</h2>
+            <div id="languages">
+                <h3>Languages</h3>
+                <div>
+                    <img src="Images\LangPhotos\cSharp.svg" alt="C Sharp logo">
+                </div>
+                <div>
+                    <img src="Images\LangPhotos\HTMLandCSS.png" alt="Html And Css logo">
+                </div>
+                <div>
+                    <img src="Images\LangPhotos\javascript.png" alt="JavaScript logo">
+                </div>
+            </div>
 
-            <form action="https://formsubmit.co/ryanhaug1024@gmail.com" method="POST">
-                <p>Name *</p>
-                <input type="text" name="name" placeholder="John Smith" required>
+            <div id="tools">
+                <h3>Tools</h3>
+                <div>
+                    <p>Visual Studio</p>
+                </div>
+                <div>
+                    <p>Unity</p>
+                </div>
+                <div>
+                    <p>Blender</p>
+                </div>
+                <div>
+                    <p>Github</p>
+                </div>
+            </div>
 
-                <p>Phone Number</p>
-                <input type="number" name="PhoneNumber" placeholder="123-456-7890">
+            <div id="projects">
+                <h3>Projects</h3>
+                <div id="Arrows">
+                    <p onclick="SwapProject(-1)">&#11013;</p>
+                    <p id="ProjCounter"></p>
+                    <p onclick="SwapProject(1)">&#10145;</p>
+                </div>
+                <article class="Project_Card" id="pCard1">
+                    <div>
+                        <h4>3 Day Project | WPF app</h4>
+                        <p>
+                            This was one of our first big c# projects in the Tech Center. The goal was to collaborate
+                            with 2 other people and build a .Net application using tools like github projects and
+                            branching, all while ensuring there were no merge conflicts and bugs. We had 3 days to
+                            complete the whole project including documentation, and my group decided instead of a .Net
+                            application we were going to use Windows Presentation Format (WPF) to create a pacman clone
+                            instead. My role in this project was to handle user input and some visual aspects such as
+                            the walls. <br>
+                            Please check out the source <a href="https://github.com/dylan-bruner-student/not-pacman"
+                                target="_blank">here!</a></p>
+                    </div>
+                    <img src="Images\pacman.gif" alt="a gif of my pacman game"
+                        style="max-width: 400px; margin: 1em; align-self: center;">
+                </article>
 
-                <p>Email *</p>
-                <input type="email" name="email" placeholder="Example@gmail.com" required>
+                <article class="Project_Card" id="pCard2">
+                    <div>
+                        <h4>Final Drive | Unity XR Game</h4>
+                        <p>
+                            As the final project for our class I wanted to challenge myself to create a cool project, I
+                            thought what better way than to make a VR game. So Final Drive was created, the goal of this
+                            game is to just make it through traffic as long as possible acheiving a high score. Imagine
+                            this as like a endless runner, but with more freedom on choice with how you move.
+                            <br>
+                            Please check out the source <a href="https://github.com/Ryan-Haug-Student/FinalDrive"
+                                target="_blank">here!</a>
+                        </p>
+                    </div>
+                    <video src="Images\videos\FinalDrivePromo.mp4" alt="a video clip of my highway racing game"
+                        style="max-width: 400px; align-self: center; margin: 1em;" controls preload="auto">
+                </article>
 
-                <p>Message *</p>
-                <input type="text" name="Message" placeholder="Message" required>
+                <article class="Project_Card" id="pCard3">
+                    <div>
+                        <h4>Reborn By the Knight | Unity 2d Game</h4>
+                        <p>
+                            As my first full Project in unity I wanted to create something simple yet replayable. The
+                            aim of the game is simple, Just stay alive as long as possible while progressively you and
+                            the enemys get stronger. I created this project and all of the art along a ~4 week stretch
+                            and I think it turned out great for a first game<br>
+                            Please check out the source <a href="https://github.com/Ryan-Haug-Student/RebornBytheKnight"
+                                target="_blank">here!</a><br>
+                            And you can play the game <a
+                                href="https://martinezclassroom.com/Projects/rebornbytheknight/index.html"
+                                target="_blank">here!</a>
+                        </p>
+                    </div>
+                    <img src="Images\RebornBtK.png" alt="a photo of gameplay from my game"
+                        style="max-width: 400px; align-self: center; margin: 1em;">
+                </article>
+            </div>
+        </section>
 
-                <br>
 
-                <input type="submit">
-                <p id="smallText">(* indicates required)</p>
-            </form>
+        <section id="Certifications">
+            <h2>Certifications</h2>
+
+            <div class="Cert_Card">
+                <h4>CompTIA ITF+</h4>
+                <p>Issued: 2/4/2025</p>
+                <a href="https://www.credly.com/badges/9e8abb3c-f15b-4b4c-9ac1-3bd36e9ef445/public_url" target="_blank">
+                    <img src="Images/CertificationPhotos/comptia-it-fundamentals-itf-certification.1.png"
+                        alt="CompTIA ITF+ badge">
+                </a>
+            </div>
+
+            <div class="Cert_Card">
+                <h4>IT Specialist HTML and CSS</h4>
+                <p>Issued: 10/7/2024</p>
+                <a href="https://www.credly.com/badges/344489d9-c3b6-45bb-af23-d6f44ca11540/public_url" target="_blank">
+                    <img src="Images/CertificationPhotos/it-specialist-html-and-css.png"
+                        alt="IT Specialist html and css badge">
+                </a>
+            </div>
+
+            <div class="Cert_Card">
+                <h4>Unity Certified Programmer</h4>
+                <p>Issued: 11/14/2024</p>
+                <a href="https://www.credly.com/badges/100dffa8-fb23-4634-9bc0-716e7ff6503c/public_url" target="_blank">
+                    <img src="Images/CertificationPhotos/unity-certified-user-programmer.png"
+                        alt="unity Certified user badge">
+                </a>
+            </div>
+
+            <div class="Cert_Card">
+                <h4>Unity Certified VR Developer</h4>
+                <p>Issued: 5/2/25</p>
+                <a href="https://www.credly.com/badges/9712574c-4a21-4f0b-8372-786c6fdf6d1a/public_url" target="_blank">
+                    <img src="Images/CertificationPhotos/unity-certified-user-vr-developer.png"
+                        alt="Unity certified vr developer badge">
+                </a>
+            </div>
+
+            <div class="Cert_Card">
+                <h4>Unity Certified Artist</h4>
+                <p>Issued: 5/2/25</p>
+                <a href="https://www.credly.com/badges/55442599-4394-40fd-98af-9286dadf8f62/public_url" target="_blank">
+                    <img src="Images/CertificationPhotos/unity-certified-user-artist.png"
+                        alt="Unity certified artist badge">
+                </a>
+            </div>
+        </section>
+
+        <section id="Contact">
+            <h2>Connect With Me</h2>
+            <div class="Contact_Card">
+                <h3>shoot me a message</h3>
+
+                <form id="ContactForm" action="https://formsubmit.co/ryanhaug1024@gmail.com" method="POST">
+                    <input type="text" placeholder="Name *" name="Name" required>
+                    <input type="email" placeholder="example@email.com *" name="Email" required>
+                    <input type="tel" placeholder="111-111-1111" name="PhoneNumber">
+                    <textarea placeholder="Message *" rows="6" name="Message" required></textarea>
+
+                    <input type="submit" value="Send">
+                </form>
+            </div>
+
+            <div id="Other-contact" class="Contact_Card">
+                <h3>Other ways to contact me</h3>
+                <a href="https://github.com/Ryan-Haug-Student" target="_blank">
+                    <img src="Images/github_logo.jpg" alt="Github logo">
+                </a>
+                <!-- <a href="" download="">Download my resume</a> -->
+            </div>
         </section>
     </main>
 
-    <script src="./Scripts/Main.js" defer></script>
+    <script src="Scripts/Main.js" defer></script>
 </body>
 
 </html>
